@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.header {
+    font-family: 'Pacifico' cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../images/fondo3.jpg');
+}
+
+
+/*=================ESTILOS PARA CELULAR=======*/
+
+.franja {
+    width: 100%;
+    margin-top: 40px
+}
+
+.icon-menu {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #4bec00;
+    display: block;
+    text-align: center;
+    border: 3px solid rgb(228, 17, 17);
+    font-size: 1.5em;
+}
+
+.menu {
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    margin-top: 50px;
+    transition: height .3s linear;
+    z-index: 1000;
+    height: 0;
+    overflow: hidden;
+}
+
+.texto {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.mostrar {
+    height: 400px;
+}
+
+.lista {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    background: #032a30
+}
+
+.link:hover {
+    background: #57859e
+}
+
+.seleccion {
+    background: #d30203
+}
+
+.link_pie {
+    text-decoration: none;
+    color: rgb(236, 25, 25);
+    display: block;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.nosotros {
+    width: 100%;
+}
+
+.titulo_nosotros {
+    width: 100%;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-left: center;
+    font-size: 40px;
+    color: #4bec00;
+}
+
+.titulo_nosotros:after {
+    display: block;
+    content: '';
+    width: 200px;
+    height: 4px;
+    background: #d302d3;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.img_nosotros {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.texto_nosotros {
+    margin: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    /* width: 100%; */
+}
+
+.historia {
+    width: 100%;
+}
+
+.titulo_historia {
+    font-family: 'Pacifico', cursive;
+    width: 100%;
+    color: #4bec00;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.titulo_historia:after {
+    display: block;
+    content: '';
+    width: 200px;
+    height: 4px;
+    background: #d302d3;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.img_historia {
+    width: 100%;
+}
+
+.texto_historia {
+    margin: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.estilo {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: purple;
+    text-align: center;
+}
+
+.estilo:after {
+    display: block;
+    content: "";
+    width: 250px;
+    height: 4px;
+    background: yellow;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.derechos {
+    font-family: 'Pacifico', cursive;
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 20px
+}
+
+
+/*=================TERMINAN ESTILOS PARA CELULAR=======*/
+
+
+/*================= ESTILOS PARA PANTALLA DE 768 PX =======*/
+
+@media screen and (min-width:768px) {
+    /* .header {
+        height: 50vh;
+        width: 50%;
+    } */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    titulo_nosotros {
+        width: 100%;
+        text-align: center;
+        font-family: 'Pacifico', cursive;
+        margin-bottom: 20px;
+        margin-top: -90px;
+        margin-left: center;
+        font-size: 40px;
+        color: #4bec00;
+    }
+    .img_nosotros {
+        /* display: flex; */
+        width: 50%;
+        height: 450px;
+        margin-left: 180px;
+    }
+    .texto_nosotros {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .img_historia {
+        display: flex;
+        width: 50%;
+        height: 450px;
+        margin-left: 180px;
+        margin-bottom: 15px;
+    }
+    .texto_historia {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .video {
+        display: flex;
+        width: 60%;
+        margin-left: 150px;
+    }
+    .icon-menu {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin-top: -100px;
+        margin-left: 50%;
+    }
+    .link {
+        margin-left: 15px;
+    }
+}
+
+
+/*================= TERMINAN ESTILOS PARA PANTALLA DE 768 PX =======*/
+
+
+/*================= EMPIEZA ESTILOS PARA PANTALLA DE 1024 PX =======*/
+
+@media screen and (min-width:1024px) {
+    /* .header {
+        
+        height: 70vh;
+        width: 50%;
+    } */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .modificador {
+        width: 1400px;
+    }
+    .titulo {
+        font-size: 85px;
+        margin-top: -50px;
+        margin-left: -50px;
+        text-align: center;
+    }
+    .img_nosotros {
+        display: flex;
+        width: 50%;
+        height: 650px;
+        margin-left: 320px;
+        margin-right: 120px;
+    }
+    .texto_nosotros {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .img_historia {
+        display: flex;
+        width: 50%;
+        height: 650px;
+        margin-left: 320px;
+        margin-right: 120px;
+    }
+    .video {
+        display: flex;
+        width: 60%;
+        margin-left: 270px;
+    }
+    .menu {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin-top: -100px;
+        margin-left: 62%;
+    }
+    .icon-menu {
+        display: none;
+    }
+}

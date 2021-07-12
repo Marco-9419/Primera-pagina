@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/*===============ESTILOS GLOBALES==============================*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+
+.modificador {
+    width: 100%;
+    margin: auto;
+}
+
+
+/*===============TERMINAN LOS ESTILOS GLOBALES==============================*/
+
+.header {
+    background-image: linear-gradient(rgba(61, 44, 44, 0.7), rgba(0, 0, 0, 0.7)), url(../images/fondo.jpg);
+    font-family: 'Pacifico', cursive;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.cabecera {
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+    float: right;
+}
+
+.franja {
+    width: 100%;
+    margin-top: 40px
+}
+
+.icon-menu {
+    cursor: ponter;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    display: block;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 1.5em;
+}
+
+.menu {
+    width: 100%;
+    margin-top: 50px;
+    transition: height .3s linear;
+    z-index: 1000;
+    height: 0;
+    overflow: hidden;
+}
+
+.mostrar {
+    height: 400px;
+}
+
+.lista {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    background: #032a30
+}
+
+.comprar {
+    text-decoration: none;
+    color: rgb(11, 238, 227);
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.comprar:hover {
+    color: rgb(0, 0, 0);
+}
+
+.link:hover {
+    background: #57859e
+}
+
+.seleccion {
+    background: #d30203
+}
+
+.texto {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.titulo {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 55px;
+    margin-top: -50px;
+    margin-left: -50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.boton {
+    color: white;
+    border: 2px solid #02c5d3;
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 40px;
+    margin-right: 4%;
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    line-height: 25px;
+    text-align: center;
+    left: 32%;
+}
+
+.boton:hover {
+    background: #f8f7f7;
+    color: black;
+}
+
+
+/*===============ESTILOS PRINCIPALES==============================*/
+
+.principal {
+    width: 100%;
+}
+
+.titutlo_principal {
+    width: 100%;
+    text-align: center;
+    color: #bc52e6;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titutlo_principal:after {
+    display: block;
+    content: " ";
+    width: 200px;
+    height: 4px;
+    background: #09d681;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.promo {
+    width: 100%;
+    margin: 5px;
+}
+
+.promo [class*="icon-"]:before {
+    color: #bc52e6;
+    font-size: 90px;
+    display: block;
+    text-align: center;
+}
+
+.titulo_promo {
+    width: 100%;
+    /* font-family: 'Pacifico', cursive; */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.texto_promo {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+
+/*===============TERMINA ESTILOS PRINCIPALES==============================*/
+
+
+/*===============ESTILOS TELEFONO MOVIL==============================*/
+
+.telefono {
+    width: 100%;
+}
+
+.titulo_telefono {
+    width: 100%;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #93a300
+}
+
+.titulo_telefono:after {
+    display: flex;
+    content: '';
+    width: 200px;
+    height: 4px;
+    background: #09d681;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.img_telefono {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.numero {
+    width: 110px;
+    height: 110px;
+    border: 3px solid #1ad302;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.texto_descripcion {
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*===============TERMINA ESTILOS TELEFONO==============================*/
+
+
+/*===============ESTILOS SUCURSALES==============================*/
+
+.sucursales {
+    width: 100%;
+}
+
+.titulo_sucursales {
+    width: 100%;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #d32c02;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo_sucursales:after {
+    display: block;
+    content: '';
+    width: 200px;
+    height: 4px;
+    background: rgb(8, 183, 236);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.tiendas {
+    width: 100%;
+}
+
+.texto_red {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.ver_ubicacion {
+    text-decoration: none;
+    color: rgb(11, 238, 227);
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.lista_tienda {
+    padding-left: -35px;
+}
+
+.fb {
+    text-decoration: none;
+    color: rgb(11, 238, 227);
+    padding: 10px;
+}
+
+.titulo_tiendas {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.img_tiendas {
+    width: 100%;
+}
+
+
+/*===============TERMINA ESTILOS SUCURSALES==============================*/
+
+
+/*==============INICIA ESTILOS CLIENTES==============================*/
+
+.titulo_clientes {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+
+.titulo_clientes:after {
+    display: block;
+    content: '';
+    width: 200px;
+    height: 4px;
+    background: rgb(145, 8, 236);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.clientes {
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(../images/fondo2.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.testimonios {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.nombre_perfil {
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.texto_testimonios {
+    margin: 10px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.img_perfil {
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 45%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.nombre_perfil {
+    margin-top: -50px;
+    margin-left: 150px;
+    color: rgb(112, 215, 233)
+}
+
+
+/*==============TERMINA ESTILOS CLIENTES==============================*/
+
+
+/*==============ESTILOS FOOTER==============================*/
+
+.footer {
+    background: #1726;
+    color: white;
+}
+
+.pie {
+    width: 100%;
+}
+
+.item_pie {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo_pie {
+    width: 100%;
+    text-align: center;
+}
+
+.texto_pie {
+    margin: 10px;
+}
+
+.lista_pie {
+    list-style: none;
+}
+
+.link_pie {
+    text-decoration: none;
+    color: rgb(236, 25, 25);
+    display: block;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.derechos {
+    font-family: 'Pacifico', cursive;
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 20px
+}
+
+
+/*==============TERMINA ESTILOS FOOTER==============================*/
+
+
+/*==============ESTILOS RESPONSIVE PARA TABLET DE 768PX==============================*/
+
+@media screen and (min-width:768px) {
+    .titulo {
+        font-size: 65px;
+        text-align: center;
+    }
+    .boton {
+        text-decoration: none;
+        color: white;
+        border: 3px solid #02c5d3;
+        padding: 20px;
+        border-radius: 40px;
+        margin-left: 12%;
+    }
+    .boton:hover {
+        background: #f8f7f7;
+        color: black;
+    }
+    .promo {
+        width: 45%;
+        margin: 10px;
+    }
+    .descripcion {
+        width: 50%;
+        margin: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .numero {
+        width: 110px;
+        height: 110px;
+        border: 3px solid #1ad302;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .telefono {
+        align-items: flex-center;
+    }
+    .tiendas {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+    }
+    .testimonios {
+        width: 55%;
+        margin: 10px;
+    }
+    .item_pie {
+        width: 45%;
+        margin: 10px;
+    }
+    .pie {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+
+/*==============TERMINA ESTILOS RESPONSIVE PARA TABLET DE 768PX==============================*/
+
+
+/*==============ESTILOS RESPONSIVE PARA COMPUTADORA DE 1024PX==============================*/
+
+@media screen and (min-width:1024px) {
+    .modificador {
+        width: 1000PX
+    }
+    .titulo {
+        font-size: 80px
+    }
+    .icon-menu {
+        display: none;
+    }
+    .img_tiendas {
+        width: 750px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        margin-left: -250px;
+    }
+    .tiendas {
+        width: 100%;
+        margin: 10px;
+        /* text-align: center; */
+    }
+    .menu {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin-top: -150px;
+        margin-left: 50%;
+    }
+    .link {
+        margin-left: 15px;
+    }
+}
+
+
+/*==============TERMINA ESTILOS RESPONSIVE PARA COMPUTADORA 1024PX ==============================*/
+
+
+/*==============TERMINA ESTILOS RESPONSIVE PARA PANTALLAS DE 1024PX ==============================*/
+
+@media screen and (min-width:1024px) {
+    .modificador {
+        width: 1400px;
+    }
+    .promo {
+        width: 23%
+    }
+    .principal {
+        align-items: flex-start;
+    }
+    .tiendas {
+        width: 23%;
+    }
+    .testimonios {
+        width: 30%;
+    }
+    .clientes {
+        align-items: flex-start;
+    }
+    .item_pie {
+        width: 30%;
+    }
+    .pie {
+        align-items: flex-start;
+    }
+}
+
+
+/*==============TERMINA ESTILOS RESPONSIVE PARA PANTALLAS DE 1600PX ==============================*/

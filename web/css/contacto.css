@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    background-image: url(../images/fondo4.jpg);
+    width: 100%;
+    height: 0 auto;
+    font-family: 'Pacifico', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+.modificador {
+    width: 100%;
+    margin: auto;
+}
+
+.icon-menu {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(15, 234, 250);
+    display: block;
+    text-align: center;
+    border: 2px solid rgb(235, 4, 204);
+    font-size: 1.5em;
+    /* padding-top: 50px; */
+}
+
+.menu {
+    width: 100%;
+    margin-top: 50px;
+    transition: height .3s linear;
+    height: 0;
+    overflow: hidden;
+}
+
+.lista {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-left: 0px;
+    margin-top: 10px;
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    background: #032a30
+}
+
+.link:hover {
+    background: #57859e
+}
+
+.mostrar {
+    height: 400px;
+}
+
+.seleccion {
+    background: rgb(0, 217, 255)
+}
+
+.titulo {
+    font-size: 55px;
+    text-align: center;
+    border-top: blue solid;
+    border-left: blue solid;
+    border-right: blue solid;
+    border-bottom: blue solid;
+    border-width: 20px;
+}
+
+.contacto {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    color: rgb(247, 0, 255);
+    padding-bottom: 25px;
+    font-family: 'Pacifico', cursive;
+}
+
+.contacto:after {
+    display: block;
+}
+
+.icon-whatsapp {
+    font-size: 25px;
+    color: green;
+}
+
+.cel {
+    width: 100%;
+    margin-left: 50px;
+    margin-top: -58px;
+    color: black;
+}
+
+.icon-correo {
+    font-size: 25px;
+    color: rgb(61, 61, 61);
+}
+
+.correo {
+    margin-left: 50px;
+    margin-top: -54px;
+    font-size: 33px;
+}
+
+.icon-facebook {
+    color: blue;
+    font-size: 25px;
+}
+
+.fb {
+    /* text-decoration: none; */
+    margin-left: 28px;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.icon-ubicacion {
+    color: red;
+    font-size: 25px;
+}
+
+.ubicacion {
+    font-size: 30px;
+    color: black;
+    margin-left: 53px;
+    margin-top: -50px;
+}
+
+.ver_ubicacion {
+    font-size: 25px;
+    text-decoration: none;
+    color: blue;
+    margin-left: 180px;
+}
+
+.derechos {
+    font-family: 'Pacifico', cursive;
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 20px
+}
+
+
+/*¨============== DISEÑO PARA TABLET DE 768PX===================*/
+
+@media screen and (min-width:768px) {
+    .icon-menu {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin-top: -60px;
+        margin-left: 39%;
+        margin-bottom: 30px;
+    }
+    .link {
+        margin-left: 15px;
+    }
+}
+
+
+/*¨==============FINALIZA EL DISEÑO PARA TABLET DE 768PX===================*/
+
+
+/*¨==============DISEÑO PARA PANTALLAS DE 1024PX===================*/
+
+@media screen and (min-width:1024px) {
+    .icon-menu {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin-top: -60px;
+        margin-left: 63%;
+        margin-bottom: 30px;
+    }
+    .link {
+        margin-left: 15px;
+    }
+    .ver_ubicacion {
+        font-size: 25px;
+        text-decoration: none;
+        color: blue;
+        /* padding-top: 150px; */
+        margin-left: 50px;
+    }
+}
+
+
+/*¨==============FINALIZA EL DISEÑO PARA PANTALLAS DE 1024PX===================*/
